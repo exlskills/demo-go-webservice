@@ -5,6 +5,9 @@
 *.so
 *.dylib
 
+# GoLand IDE files
+.idea
+
 # Dependencies (more on this later)
 vendor/
 
