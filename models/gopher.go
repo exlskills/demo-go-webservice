@@ -13,7 +13,7 @@ type Gopher struct {
 	UpdatedAt time.Time `json:"-"`
 }
 
-func (gopher *Gopher) FindById() error {
+func (gopher *Gopher) FindByID() error {
 	return db.Where("id = ?", gopher.ID).First(&gopher).Error
 }
 
