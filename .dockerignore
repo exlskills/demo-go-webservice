@@ -1,0 +1,2 @@
+# We don't want to have our local vendor pushed into the docker build
+vendor/
