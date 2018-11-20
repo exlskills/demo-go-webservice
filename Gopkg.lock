@@ -3,9 +3,15 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:a6897300a454a186f4f079050f474c6da41bf9bc8289d426820474ff747b0326"
+  digest = "1:d929bdefe7484003e1791d1a01524f63a077d256d85f11697f354109b77d1048"
   name = "github.com/exlinc/golang-utils"
-  packages = ["envconfig"]
+  packages = [
+    "envconfig",
+    "htmlhttp",
+    "httpmiddleware",
+    "jsonhttp",
+    "queryparams",
+  ]
   pruneopts = "UT"
   revision = "b526c57121307ce873f8cc45c01a25e3e8f31341"
 
@@ -16,6 +22,30 @@
   pruneopts = "UT"
   revision = "72cd26f257d44c1114970e19afddcd812016007e"
   version = "v1.4.1"
+
+[[projects]]
+  digest = "1:c79fb010be38a59d657c48c6ba1d003a8aa651fa56b579d959d74573b7dff8e1"
+  name = "github.com/gorilla/context"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "08b5f424b9271eedf6f9f0ce86cb9396ed337a42"
+  version = "v1.1.1"
+
+[[projects]]
+  digest = "1:664d37ea261f0fc73dd17f4a1f5f46d01fbb0b0d75f6375af064824424109b7d"
+  name = "github.com/gorilla/handlers"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "7e0847f9db758cdebd26c149d0ae9d5d0b9c98ce"
+  version = "v1.4.0"
+
+[[projects]]
+  digest = "1:e73f5b0152105f18bc131fba127d9949305c8693f8a762588a82a48f61756f5f"
+  name = "github.com/gorilla/mux"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "e3702bed27f0d39777b0b37b664b6280e8ef8fbf"
+  version = "v1.6.2"
 
 [[projects]]
   digest = "1:b6f4477f09f11785097a121811f3a90d8d26cab73c1aa71abda859bdf6ad2334"
@@ -84,6 +114,12 @@
   analyzer-version = 1
   input-imports = [
     "github.com/exlinc/golang-utils/envconfig",
+    "github.com/exlinc/golang-utils/htmlhttp",
+    "github.com/exlinc/golang-utils/httpmiddleware",
+    "github.com/exlinc/golang-utils/jsonhttp",
+    "github.com/exlinc/golang-utils/queryparams",
+    "github.com/gorilla/handlers",
+    "github.com/gorilla/mux",
     "github.com/jinzhu/gorm",
     "github.com/jinzhu/gorm/dialects/mysql",
     "github.com/sirupsen/logrus",
