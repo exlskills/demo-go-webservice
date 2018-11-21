@@ -4,8 +4,6 @@ services:
   web:
     build:
       context: .
-    links:
-      - "db:db"
     ports:
       - "3333:3333"
     environment:
